@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+</head>
+<style>
+    form, h1 {text-align: center;}
+</style>
+<body>
+    <h1>Employee Interests Survey Form</h1>
+    <hr>
+    <form action="" method="post">
+    <label for="Fname">Enter your name:</label>
+    <input type="text" id="Fname" name="Full name"  value="" placeholder="Enter your full name"> <br><br>
+    <label for="dep">Enter your departmatnt</label>
+    <input type="text" id="dep" name="departmatnt"  value="" placeholder="inter your departmatnt">
+    <br><br>
+    <!-- text -->
+    <span>Tell us a little about yourself:</span>
+    <textarea name="about yourself" id="about" cols="20" rows="5"></textarea>
+    <br><br>
+    <!-- radio -->
+    <span>Do you exercise at home?</span>
+    <input type="radio" id="exe" name="exercise" value="Yes">
+    <label for="exe">Yes</label>
+    <input type="radio" id="exe2" name="exercise" value="No">
+    <label for="exe2">No</label>
+    <br><br>
+    <!-- checkboxes -->
+    <span>How do you like to read about your favorite topics</span> <br>
+    <input type="checkbox" name="raed" id="read1" value="Books">
+    <label for="read1">Books</label>
+    <input type="checkbox" name="raed" id="read2" value="Online resources">
+    <label for="read2">Online resources</label>
+    <input type="checkbox" name="raed" id="read3" value="Phone apps">
+    <label for="read3">Phone apps</label>
+    <input type="checkbox" name="raed" id="read4" value="Magazines">
+    <label for="read4">Magazines</label>
+    <br><br>
+    <!-- selector -->
+    <span>What genre of movies do you like?</span>
+    <select name="City" id="City">
+        <option value="comedy"> comedy</option>
+        <option value="action">action</option>
+        <option value="drama">drama</option>
+        <option value="romantic">romantic</option>
+        <option value="animation">animation</option>
+    </select>
+    <br><br>
+    <button type="button">Submit form</button>
+    </form>
+
+</body>
+</html>
