@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <style>
+        *{
+            margin: 4px 0 ;
+        }
+        .div1 {
+            background-color: greenyellow;
+            width: 90%;
+            height: 350px;
+        }
+        .div2 {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 8px;
+            width: 90%;
+            height: 350px;          
+        }
+        .div2 >div {
+            background-color: aqua;
+            display: block;
+            max-width: 100%;
+        }
+        .div3 {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 8px;
+            width: 90%;
+            height: 200px;          
+        }
+        .div3 >div {
+            background-color: gray;
+            display: block;
+            max-width: 100%;
+        }
+        @media screen and (min-width: 481px) and (max-width: 768px){
+          .div1 {
+            height: 200px;
+            }
+          .div2 {
+            grid-template-columns: auto;
+            gap: 0px;
+            height: 300px;
+          }  
+          .div3 {
+            grid-template-columns: auto auto;
+            gap: 0 20px;
+            height:150px ;
+          }
+        }
+        @media screen and (max-width: 480px){
+          .div1 {
+            height: 100px;
+            }
+          .div2 {
+            grid-template-columns: auto;
+            gap: 0px;
+            height: 900px;
+          }  
+          .div3 {
+            grid-template-columns: auto;
+            gap: 0 20px;
+            height:300px ;
+          }
+        }
+
+
+    </style>
+</head>
+<center>
+<body>
+    <div class="div1"></div>
+    <div class="div2">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="div3">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    
+</body>
+</center>
+</html>
