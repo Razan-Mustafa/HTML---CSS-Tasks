@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <style>
+        div {
+            position: relative;
+            width: 100px; 
+            height:100px;
+            background-color: green;
+            animation-name: color;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+           }
+        @keyframes color {
+            0%{ left: 300px; top: 0px;background-image:linear-gradient(green,aqua);}
+            20%{ left: 300px; top: 200px; }
+            50%{ left: 0px; top: 200px;}
+            75% { left: 0px; top: 0px;}
+            100%{ left: 100px; top: 0px;}
+            5%{ background-image:linear-gradient(green,aqua);}
+            20%{background-image:linear-gradient(aqua,blue);}
+            45%{background-image:linear-gradient(blue,yellow);}
+            50%{ background-image:linear-gradient(yellow,orange);}
+            70% { background-image: linear-gradient(orange,brown);}
+            90%{ background-image: linear-gradient(brown,green);}
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Animation</h1>
+    <hr>
+    <div></div>
+</body>
+</html>
