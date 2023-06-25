@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3</title>
+    <style>
+        .all {
+            display: flex;
+            background-color: gray;
+            border-radius: .5cm;
+            width: 40px;
+            height: 100px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            
+        }
+        .red {
+           
+            width: 20px;
+            height: 20px;
+            background: rgb(114, 61, 61);
+            border-radius: 50%;
+            animation-name: red;
+            animation-duration: 4s;
+        }
+        .yellow {
+            width: 20px;
+            height: 20px;
+            background: rgb(124, 124, 73);
+            border-radius: 50%;
+            animation-name: yellow;
+            animation-duration: 2s;
+            animation-delay: 4s;
+        }
+        .green {
+            width: 20px;
+            height: 20px;
+            background: rgb(29, 87, 29);
+            border-radius: 50%;
+            animation-name: green;
+            animation-duration: 4s;
+            animation-delay: 6s;
+        }
+        @keyframes red {
+            0% { background-color: red;}
+            33% {background-color:red ;}
+        }
+        @keyframes yellow {
+            66% {background-color:yellow ;}
+        }
+        @keyframes green {
+            66% {background-color:rgb(9, 253, 9) ;}
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="green"></div>
+    </div>
+</body>
+</html>
